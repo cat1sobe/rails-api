@@ -33,6 +33,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  #deviseによる認証機構において登録したメールからアクセスするようのURLを設定する
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
