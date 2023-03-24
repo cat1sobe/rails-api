@@ -38,6 +38,8 @@ gem'devise-i18n'
 #CORS(Cross-Origin Resource Sharing)
 gem'rack-cors' 
 
+#modelクラスにテーブル情報（カラムなど）が自動で反映される
+gem 'annotate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
